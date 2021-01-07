@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="Task1.xsl"?>
+<Students xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="Task1.xsd">
+	<Student sid="a">
+		<no>1000</no>
+		<name>Rahul</name>
+		<email>123@gmail.com</email>
+		<marks>95</marks>
+		<class>10</class>
+	</Student>
+	<Student sid="b">
+		<no>1001</no>
+		<name>Ayesha</name>
+		<email>123abc@gmail.com</email>
+		<marks>85</marks>
+		<class>10</class>
+	</Student>
+	<Student sid="c">
+		<no>1002</no>
+		<name>Ramesh</name>
+		<email>12345abc@gmail.com</email>
+		<marks>85</marks>
+		<class>9</class>
+	</Student>
+	<Student sid="d">
+		<no>1003</no>
+		<name>Rahul</name>
+		<email>abc@gmail.com</email>
+		<marks>98</marks>
+		<class>10</class>
+	</Student>
+	<Student sid="e">
+		<no>1004</no>
+		<name>Harika</name>
+		<email>harika@gmail.com</email>
+		<marks>93</marks>
+		<class>9</class>
+	</Student>
+</Students>
