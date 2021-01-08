@@ -15,19 +15,19 @@
 					</tr>
 					<xsl:for-each select="Student">
 						<tr>
-							<td>
+							<td bgcolor="lightgreen">
 								<xsl:value-of select="no" />
 							</td>
-							<td>
+							<td bgcolor="lightblue">
 								<xsl:value-of select="name" />
 							</td>
-							<td>
+							<td bgcolor="lightCharcoal">
 								<xsl:value-of select="email" />
 							</td>
-							<td>
+							<td bgcolor="Cinerous">
 								<xsl:value-of select="marks" />
 							</td>
-							<td>
+							<td bgcolor="lightMagentadye">
 								<xsl:value-of select="class" />
 							</td>
 						</tr>
