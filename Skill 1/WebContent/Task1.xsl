@@ -7,7 +7,7 @@
 				<h1 align="center">Student Details</h1>
 				<table border="1" align="center">
 					<tr>
-						<th bgcolor="yellow">Student NO</th>
+						<th bgcolor="yellow">Student No</th>
 						<th bgcolor="yellow">Student Name</th>
 						<th bgcolor="yellow">E-mail</th>
 						<th bgcolor="yellow">Marks</th>
