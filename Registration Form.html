@@ -1,0 +1,98 @@
+<html>
+<head>
+<script>
+function task()
+{
+ var name = document.task2.name.value;
+ var number = document.task2.number.value;
+ var email = document.task2.email.value;
+ var gender = document.task2.gender.value;
+ var game = document.task2.gender.value;
+ var address = document.task2.address.value;
+ var at = email.indexOf('@');
+ var dot = email.indexOf('.');
+if (name==null || name=="")
+{ 
+ alert("Please Enter Your Name"); 
+ return false; 
+}
+if (number==null || number=="")
+{ 
+ alert("Please Enter Your Registered id"); 
+ return false; 
+}
+if (email==null || email=="")
+{ 
+ alert("Email ID can't be blank"); 
+ return false; 
+}
+if (gender==null || gender=="")
+{ 
+ alert("Please Choose Your Gender"); 
+ return false; 
+}
+if (game==null || game=="")
+{ 
+ alert("Favourite game must be selected"); 
+ return false; 
+}
+if (address==null || address=="")
+{ 
+ alert("Address can't be blank"); 
+ return false; 
+}
+if(number<=190030000 || number>=190032999)
+{
+alert("Not Found This Registered id");
+return false;
+}
+if((dot - at)>5 && email[dot+3]!=null)
+{
+ alert("Welcome"+" "+name);
+ return false; 
+}
+else
+{
+alert("Invalid email");
+return false; 
+}
+}
+</script>
+</head>
+<body>
+<form name="task2" method="post" onsubmit="return task()">
+<h1 align="center">Registration Form</h1>
+<table  align="center">
+<tr><td>Name Of the Student:</td><td><input type="text" name="name"></td></tr>
+<tr><td>Registered Number:</td><td><input type="text" name="number"></td></tr>
+<tr><td>Email:</td><td><input type="text" name="email"></td></tr>
+<tr><td>Gender:</td>
+   <td>
+      <input type="radio" name="gender" id="male" value="male">
+        <label for="male">Male</label>
+      <input type="radio" name="gender" id="female" value="female">
+        <label for="female">Female</label>
+       <input type="radio" name="gender" id="other" value="other">
+        <label for="other">other</label>
+      </td>
+ </tr>
+<tr><td>Favourite Game:</td>
+   <td>
+       <input type="checkbox" name="game" id="cricket" value="1">
+       <label for="cricket">Cricket</label>
+        <input type="checkbox" name="game" id="football" value="2">
+       <label for="football">Football</label>
+
+<tr><tr></tr></tr>
+<tr></tr>
+<tr><td>Address:</td>
+     <td>
+        <textarea id="address" name="address"  rows="6" cols="40"></textarea><br>
+    </td>
+</tr>
+
+<td><input type="submit" value="Register"></td>
+</table>
+</form>
+</body>
+</html>
