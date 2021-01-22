@@ -1,5 +1,5 @@
-create database ep;
-use ep;
+create database ep1;
+use ep1;
 create table employee(ID int primary key,Name varchar(20),Email varchar(25),Designation varchar(15), DOB varchar(20), age int,salary bigint);
 desc employee;
 insert into employee values(1000,'Sergio','professor@gmail.com','Professor','15-oct-1998',22,25000);
