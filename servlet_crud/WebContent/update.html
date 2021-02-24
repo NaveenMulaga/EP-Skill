@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+h1 {
+  color: purple;
+}
+
+
+table {
+  width: 600px;
+  padding: 40px;  
+  border: 10px double darkorange;
+}
+
+</style>
+  </style>
+  <script>
+  function validate() {
+		var name = document.form2.name.value;
+		var id = document.form2.regno.value;
+		if (name == "") {
+			alert('Name must be filled');
+			return false;
+		}
+		if(id==""){
+			alert("Id must be filled");
+			return false;
+		}
+		if (name.length < 8) {
+			alert("Name must be min 8 characters");
+			return false;
+		}
+		if (id.length < 3) {
+			alert("ID no must be min 3 digits");
+			return false;
+		}
+  }
+  </script>
+</head>
+<body>
+<h1 align="center">EDIT FORM</h1>
+<form name="form2" method="post" onsubmit="return validate()" action="update">
+		<br>
+		<table align="center" class="bordered">
+			<tr>
+				<td>REGISTERED NUMBER</td>
+				<td>: &nbsp;&nbsp;<input type="text" name="regno"><br></td>
+			</tr>
+			<tr>
+				<td>STUDENT NAME&nbsp;&nbsp;&nbsp;</td>
+				<td>: &nbsp;&nbsp;<input type="text" name="name"><br></td>
+			</tr>
+			<tr>
+			<td><input type="submit" style='position: relative; left: 300px;' value="UPDATE"></td>
+			</tr>
+			</table>
+			</form>
+</body>
+</html>

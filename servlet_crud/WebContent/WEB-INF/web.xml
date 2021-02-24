@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<element>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>servlet_crud</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>delete</display-name>
+    <servlet-name>delete</servlet-name>
+    <servlet-class>servlet_crud.delete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>delete</servlet-name>
+    <url-pattern>/delete</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>insert</display-name>
+    <servlet-name>insert</servlet-name>
+    <servlet-class>servlet_crud.insert</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>insert</servlet-name>
+    <url-pattern>/insert</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>update</display-name>
+    <servlet-name>update</servlet-name>
+    <servlet-class>servlet_crud.update</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>update</servlet-name>
+    <url-pattern>/update</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>view</display-name>
+    <servlet-name>view</servlet-name>
+    <servlet-class>servlet_crud.view</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>view</servlet-name>
+    <url-pattern>/view</url-pattern>
+  </servlet-mapping>
+</web-app>
+</element>

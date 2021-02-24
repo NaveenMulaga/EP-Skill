@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+h1 {
+  color: darkgreen;
+}
+
+
+table {
+  width: 600px;
+  padding: 40px;  
+  border: 10px double maroon;
+}
+
+</style>
+  </style>
+  <script>
+	function validate() {
+		var id = document.form1.regno.value;
+		if(id==""){
+			alert("Id must be filled");
+			return false;
+		}
+		if (id.length < 3) {
+			alert("ID no must be min 3 digits");
+			return false;
+		}
+	}
+	</script>
+</head>
+<body>
+<h1 align="center">DELETE FORM</h1>
+<form name="form1" method="post" onsubmit="return validate()" action="delete">
+		<br>
+		<table align="center" class="bordered">
+			<tr>
+				<td>REGISTERED NUMBER</td>
+				<td>: &nbsp;&nbsp;<input type="text" name="regno"><br></td>
+			</tr>
+			<tr>
+			<td><input type="submit" style='position: relative; left: 300px;' value="DELETE"></td>
+			</tr>
+			</table>
+			</form>
+</body>
+</html>

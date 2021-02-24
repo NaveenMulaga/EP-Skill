@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+h1 {
+  color: brown;
+}
+
+
+table {
+  width: 600px;
+  padding: 40px;  
+  border: 10px double darkgreen;
+}
+
+</style>
+</style>
+<script>
+	function validate() {
+		var name = document.form.name.value;
+		var id = document.form.regno.value;
+		var email = document.form.email.value;
+		var symbol = email.indexOf('@');
+		var dot = email.lastIndexOf('.');
+		var len = email.length;
+		if (name == "") {
+			alert('Name must be filled');
+			return false;
+		}
+		if(id==""){
+			alert("Id must be filled");
+			return false;
+		}
+		if(email==""){
+			alert("Email must be filled");
+			return false;
+		}
+		if (name.length < 8) {
+			alert("Name must be min 8 characters");
+			return false;
+		}
+		if (id.length < 3) {
+			alert("ID no must be min 3 digits");
+			return false;
+		}
+		if (email.length < 8) {
+			alert("Email must be min 8 characters");
+			return false;
+		}
+
+		if (symbol == -1 && dot == -1) {
+			alert("Enter Valid EmailID");
+			return false;
+		} else if ((parseInt(dot) - parseInt(symbol)) == 1) {
+			alert("Enter Valid EmailID");
+			return false;
+		} else if ((parseInt(len) - parseInt(dot) - 1) < 2) {
+			alert("Enter Valid EmailID");
+			return false;
+		}
+	}
+</script>
+</head>
+<body>
+<h1 align="center"> ADD NEW STUDENT </h1>
+<form name="form" method="post" onsubmit="return validate()" action="insert">
+		<br>
+		<table align="center" class="bordered">
+			<tr>
+				<td>STUDENT NAME&nbsp;&nbsp;&nbsp;</td>
+				<td>: &nbsp;&nbsp;<input type="text" name="name"><br></td>
+			</tr>
+			<tr>
+				<td>REGISTRATION NUMBER&nbsp;&nbsp;&nbsp;</td>
+				<td>: &nbsp;&nbsp;<input type="text" name="regno"><br></td>
+			</tr>
+			<tr>
+				<td>EMAIL ADDRESS&nbsp;&nbsp;&nbsp;</td>
+				<td>: &nbsp;&nbsp;<input type="text" name="email"><br><br></td>
+			</tr>
+			<tr>
+			<td><input type="submit" style='position: relative; left: 300px;' value="SUBMIT"></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
